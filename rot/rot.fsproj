@@ -54,10 +54,10 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Rot.fs" />
-    <Compile Include="Main.fs" />
-    <Compile Include="Tests.fs" />
     <Compile Include="File.fs" />
+    <Compile Include="Rot.fs" />
+    <Compile Include="Tests.fs" />
+    <Compile Include="Main.fs" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
 </Project>

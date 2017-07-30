@@ -1,13 +1,16 @@
-﻿open Rot
+﻿namespace Rot13
+open Rot
+open FileIO
 
 
+module Main =
+  [<EntryPoint>]
+  let entry argv =
+    if (argv.Length = 0) then
+          nullArg("Please provide the route to a file on the system to process")
+    else
+      FileIO.Open argv.[0]
+      |> List.map(fun line -> Rot.Encrypt.rotify(line) |> printfn("%s") )
+      |> ignore
 
-
-[<EntryPoint>]
-let main argv = 
-
-    
-    printfn "%A" Encrypt.az
-    0 // return an integer exit code
-
-    
+      0

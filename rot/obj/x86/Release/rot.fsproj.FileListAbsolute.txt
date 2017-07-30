@@ -1,0 +1,9 @@
+/Users/pz/w/functional/rot/bin/Release/rot.exe
+/Users/pz/w/functional/rot/bin/Release/FSharp.Core.dll
+/Users/pz/w/functional/rot/bin/Release/nunit.framework.dll
+/Users/pz/w/functional/rot/bin/Release/System.ValueTuple.dll
+/Users/pz/w/functional/rot/bin/Release/FSharp.Core.xml
+/Users/pz/w/functional/rot/bin/Release/nunit.framework.xml
+/Users/pz/w/functional/rot/obj/x86/Release/rot.fsprojResolveAssemblyReference.cache
+/Users/pz/w/functional/rot/obj/x86/Release/rot.fsproj.CoreCompileInputs.cache
+/Users/pz/w/functional/rot/obj/x86/Release/rot.exe

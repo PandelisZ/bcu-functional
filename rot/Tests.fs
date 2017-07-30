@@ -3,6 +3,7 @@ module Tests
 open System
 open NUnit.Framework
 open Rot
+open Main
 
 [<Test>]
 let ``Expand a string into a list with each character as an element``() =
@@ -50,3 +51,8 @@ let ``Shift 13 characters allong alphabet lowercase``() =
     let i = 'a'
     let o = 'n'
     Assert.AreEqual(o, Rot.Encrypt.shift(i))
+
+
+[<Test>]
+let ``Check that argument is provided``() =
+    Assert.Throws(Main)
