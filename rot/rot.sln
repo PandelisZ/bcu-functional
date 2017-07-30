@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "rot", "rot.fsproj", "{181F1955-87D9-4DA5-9617-09A558A7C9D8}"
 EndProject
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "rot.test", "rot.test\rot.test.fsproj", "{6BCC6A02-349A-4DBD-A7EE-6D7B27432745}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,9 +13,5 @@ Global
 		{181F1955-87D9-4DA5-9617-09A558A7C9D8}.Debug|x86.Build.0 = Debug|x86
 		{181F1955-87D9-4DA5-9617-09A558A7C9D8}.Release|x86.ActiveCfg = Release|x86
 		{181F1955-87D9-4DA5-9617-09A558A7C9D8}.Release|x86.Build.0 = Release|x86
-		{6BCC6A02-349A-4DBD-A7EE-6D7B27432745}.Debug|x86.ActiveCfg = Debug|x86
-		{6BCC6A02-349A-4DBD-A7EE-6D7B27432745}.Debug|x86.Build.0 = Debug|x86
-		{6BCC6A02-349A-4DBD-A7EE-6D7B27432745}.Release|x86.ActiveCfg = Release|x86
-		{6BCC6A02-349A-4DBD-A7EE-6D7B27432745}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
