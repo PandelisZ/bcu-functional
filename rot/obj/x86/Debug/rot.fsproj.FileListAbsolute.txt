@@ -1,0 +1,11 @@
+/Users/pz/w/functional/rot/obj/x86/Debug/rot.fsprojResolveAssemblyReference.cache
+/Users/pz/w/functional/rot/obj/x86/Debug/rot.fsproj.CoreCompileInputs.cache
+/Users/pz/w/functional/rot/bin/Debug/rot.exe
+/Users/pz/w/functional/rot/bin/Debug/rot.exe.mdb
+/Users/pz/w/functional/rot/bin/Debug/FSharp.Core.dll
+/Users/pz/w/functional/rot/bin/Debug/System.ValueTuple.dll
+/Users/pz/w/functional/rot/bin/Debug/FSharp.Core.xml
+/Users/pz/w/functional/rot/obj/x86/Debug/rot.exe
+/Users/pz/w/functional/rot/obj/x86/Debug/rot.exe.mdb
+/Users/pz/w/functional/rot/bin/Debug/nunit.framework.dll
+/Users/pz/w/functional/rot/bin/Debug/nunit.framework.xml

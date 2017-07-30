@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{1BBDFACA-FAD7-4441-877C-0BF7C80AC3DA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="rot13/Tutorial.fs">
+    <Files>
+      <File FileName="rot13/Tutorial.fs" Line="32" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.tutorial PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{5ABC2169-B1D3-4323-A8C5-D3B57270BBF4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests.fs">
+    <Files>
+      <File FileName="Rot.fs" Line="32" Column="5" />
+      <File FileName="Tests.fs" Line="10" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.rot13 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

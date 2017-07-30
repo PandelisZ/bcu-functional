@@ -1,0 +1,7 @@
+/Users/pz/w/functional/rot13/bin/Debug/netcoreapp1.1/rot13.deps.json
+/Users/pz/w/functional/rot13/bin/Debug/netcoreapp1.1/rot13.runtimeconfig.json
+/Users/pz/w/functional/rot13/bin/Debug/netcoreapp1.1/rot13.runtimeconfig.dev.json
+/Users/pz/w/functional/rot13/obj/Debug/netcoreapp1.1/rot13.fsprojResolveAssemblyReference.cache
+/Users/pz/w/functional/rot13/obj/Debug/netcoreapp1.1/rot13.fsproj.CoreCompileInputs.cache
+/Users/pz/w/functional/rot13/bin/Debug/netcoreapp1.1/rot13.dll
+/Users/pz/w/functional/rot13/obj/Debug/netcoreapp1.1/rot13.dll
