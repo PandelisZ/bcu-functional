@@ -1,7 +1,8 @@
 \documentclass{article}
 \input{packages}
 \addbibresource{bibliography.bib}
-
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 \pagestyle{headings}
 \usepackage[backend=biber, style=authoryear, sorting=nty]{biblatex}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
@@ -12,6 +13,9 @@
 \maketitle
 \newpage
 
+
+\tableofcontents
+\newpage
 
 \input{rot13}
 \input{pangram}

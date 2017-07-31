@@ -268,3 +268,30 @@ We don't expect an output from printfn so we have to send it to ignore.
 The utility then exits with a code 0.
 
 \subsection{Solution Analysis}
+
+We managed to achieve the main goals we set out to reach with this utility.
+Our tests have made it very easy to define when the solution worked and we had
+achieved our minimum goals. We also managed to keep it very declarative with a pipeline of functions
+to bring the process together at the end.
+
+I did however have some difficulties trying to pipe in from the terminal so that feature was omitted.
+There are also some areas where we could improve upon performance by simplifying the process of execution and decision making especially in Rot.Encrypt.shift.
+Theres also some casting from chars to ints that could possibly be improved to achieve better performance.
+
+Compared to the following command line utility, our Rot program took twice as long to rotify a long file. This may be attributed to the way we are casting to lists. It may be possible to improve here by utilising streams.
+\begin{lstlisting}[caption=Method of comparison]
+  > time mono rot.exe file.txt
+  > cat file.txt | time tr 'A-Za-z' 'N-ZA-Mn-za-m'
+\end{lstlisting}
+
+\begin{figure}
+\caption{Result for tr}
+\centering
+\includegraphics[width=0.5\textwidth]{spiral}
+\end{figure}
+
+\begin{figure}
+\caption{Result for rot.exe}
+\centering
+\includegraphics[width=0.5\textwidth]{spiral}
+\end{figure}
