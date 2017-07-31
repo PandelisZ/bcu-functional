@@ -6,8 +6,9 @@ open Rot
 
 [<Test>]
 let ``Expand a string into a list with each character as an element``() =
-    let zeroUSD = 0
-    Assert.AreEqual(zeroUSD, 0)
+    let i = "Hello"
+    let list = ['H';'e';'l';'l';'o']
+    Assert.AreEqual(list, Rot.Alphabet.explode i)
 
 
 [<Test>]

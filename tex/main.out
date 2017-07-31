@@ -1,6 +1,10 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Tennis game scoring system}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Brief}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Analysis}{section.2}% 4
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Expected Behaviour}{subsection.2.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Difficulties faced}{section.2}% 6
+\BOOKMARK [1][-]{section.1}{Pangram}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Brief}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Planning and Design}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Defining behaviour}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Approach}{subsection.1.2}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Technical Requirements}{subsection.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.3}{Implementation}{section.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Pangram.fs}{subsection.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.4}{File.fs}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.5}{Main.fs}{section.1}% 10

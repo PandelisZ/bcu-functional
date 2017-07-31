@@ -4,6 +4,7 @@
 
 \pagestyle{headings}
 \usepackage[backend=biber, style=authoryear, sorting=nty]{biblatex}
+\renewcommand*{\nameyeardelim}{\addcomma\space}
 \begin{document}
 
 \title{Declarative Programming Coursework}
@@ -11,9 +12,10 @@
 \maketitle
 \newpage
 
-\input{introduction}
-\input{tennis}
 
+\input{rot13}
+\input{pangram}
+\input{essay}
 
 \clearpage
 \printbibliography

@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1501467888 "packages.tex" "packages.pdf" "packages" 1501467888
+  "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1480098701 768 1321e9409b4137d6fb428ac9dc956269 ""
+  "/usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf" 1494087824 32646 eadc4ca26cdbe7105ac7c593aa8c4f72 ""
+  "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1501461160 4129592 aaf47341101b111d2c72a007b5fbe42a ""
+  "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "fsharpFormatting.tex" 1481666931 1021 a86f147943593e469ecd365fd6ebc192 ""
+  "packages.aux" 1501467888 8 a94a2480d3289e625eea47cd1b285758 ""
+  "packages.tex" 1501467377 348 178ec4bcea839c8ce554c86ab96f062d ""
+  (generated)
+  "packages.log"
+  "packages.pdf"

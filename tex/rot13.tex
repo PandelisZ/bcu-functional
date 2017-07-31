@@ -1,0 +1,270 @@
+\section{Rot13}
+
+\subsection{Brief}
+
+Implement a rot-13 utility program (like tr, which acts like a common UNIX utility, performing a line-by-line rot-13 encoding of every line of input contained in each file listed on its command line.
+
+\subsection{Planning and Design}
+
+ROT13 is a type of Caesar cypher in which each character is replaced with the corresponding letter 13 spaces down the alphabet. When the cypher gets to the end of the usable alphabet it looks back around to A.
+
+\subsubsection{Defining behaviour}
+
+As we aim to build a command line utility program we will be creating a simple
+argument based console utility. We will be defining a single entry point to the
+ROT13 utility in which we will accept a single argument. This argument will be
+the relative or absolute file path to a file on the users disc.
+
+We may also want to implement a method for accepting a bigger input to the
+utility in order to be able to pipe a file into it. Such that you could use
+the cat utility to pipe the contents of a file into ROT13.
+
+\bigskip
+
+\input{rot13/console-example}
+
+\subsubsection{Approach}
+
+As we are essentially dealing with a type of encryption we will also face the
+difficulty of verifying that our implementation works and is reliable. Due to
+the expected and highly reproducible behaviour of encryption and cyphers the same
+input will always have the same output.
+
+In order to make sure our code is reliable and is doing exactly what we expect
+it to do during all phases of development we will be using a test driven
+development process. This means at every stage we will be defining a test for
+whatever function or feature we are writing at the time. That feature or function
+will not be deemed as working until it passes its test. When it does it will be
+deemed reliable enough to use repeatedly throughout the rest of the application.
+
+This will allow us to build up and reuse our functions piece by piece and quickly
+fix any errors with the functions we work on later on because we will have already
+tested the functions feeding into the later functions earlier.
+
+In order to keep the code style as declarative as possible, we will only write
+unary functions that can be easily pipelined. As we build up our application
+we will add to the pipeline eventually creating the full feature set of operations.
+
+This will also aid in our testing as we can test minimal code and write many more
+tests.
+
+\subsubsection{Technical Requirements}
+
+In order to effectively define and execute tests we will be needed a testing
+framework. I have chosen to use NUnit and all test will be defined within the
+NUnit framework.
+
+In order to keep our code clean and reusable the project will be split into 4
+files and modules. The files will be (in execution order):
+\begin{enumerate}
+  \item File.fs - File IO operations
+  \item Rot.fs - ROT encryption and transformation
+  \item Tests.fs - Unit tests
+  \item Main.fs - Entry point where File meets Rot function
+\end{enumerate}
+
+\subsection{Implementation}
+
+The full source code is available in the appendix. Please note that unit tests will be shown inline
+with their accompanying function where applicable. In reality all tests exist in Tests.fs
+
+Please also note that double single quotes ('') are used in test function names
+as there were problems displaying them as double back ticks ( \` )
+
+\subsubsection{Rot.fs}
+Rot.fs is the main logic of our utility. This is where the shifting and
+cyphering will take place. This file contains the following modules and functions.
+
+\begin{lstlisting}[language=F]
+  module Rot
+  module Alphabet
+      explode: string -> char list
+      implode: char list -> string
+  module Encrypt
+      isUpper: char -> bool
+      toLower: char -> char
+      toUpper: char -> char
+      rec shift: char -> char
+      rotify: string -> string
+\end{lstlisting}
+
+I have split Rot down into two submodules. Rot.Alphabet and Rot.Encrypt. Rot.Alphabet
+handles transforming the incoming strings to the appropriate char Lists while
+Rot.Encrypt carries out the cyphering of the incoming text, utilising Rot.Alphabet
+
+\bigskip
+
+\textbf{module Alphabet}
+
+\begin{lstlisting}[language=F]
+let explode (s:string) =
+        [for char in s -> char]
+
+[<Test>]
+let ''Expand a string into a list with each character as an element''() =
+      let i = "Hello"
+      let list = ['H';'e';'l';'l';'o']
+      Assert.AreEqual(list, Rot.Alphabet.explode i)
+\end{lstlisting}
+
+Explode takes a string argument and will expand it out into a List of Chars.
+For every \textbf{char} found in the string \textbf{s} it will yield the
+\textbf{char} at that position.
+
+\begin{lstlisting}[language=F]
+let implode (xs:char list) =
+      let sb = System.Text.StringBuilder(xs.Length)
+      xs |> List.iter (sb.Append >> ignore)
+      sb.ToString()
+
+[<Test>]
+let ''Implode the created list into a string containing the characters in the list''() =
+      let list = ['H';'e';'l';'l';'o']
+      Assert.AreEqual("Hello", Rot.Alphabet.implode list)
+\end{lstlisting}
+Implode as the name suggests does the opposite of explode. It takes a List of Chars
+and returns back a string of those chars. Unfortunately I couldn't not find a way
+around piping the output of sb.Append to ignore so this function is not as declarative as it could be.
+
+\textbf{module Encrypt}
+
+\begin{lstlisting}[language=F]
+let isUpper (c:char) =
+    System.Char.IsUpper c
+
+let toLower (c:char) =
+    System.Char.ToLower c
+
+let toUpper (c:char) =
+    System.Char.ToUpper c
+\end{lstlisting}
+These functions exists purely as syntactic sugar to make it easier to use them
+in the next function call.
+
+\begin{lstlisting}[language=F]
+let rec shift (c:char) =
+     if(System.Char.IsLetter c) then
+         let num = int(c) - int('A')
+         let offsetNum = (num+13)%26
+         if(isUpper c) then
+             char(offsetNum + int('A'))
+         else
+             toUpper(c)
+             |> shift
+             |> toLower
+     else
+         c
+[<Test>]
+let ''Handle non text shifting''() =
+   let i = '@'
+   let o = '@'
+   Assert.AreEqual(o, Rot.Encrypt.shift(i))
+
+[<Test>]
+let ''Shift 13 characters allong alphabet''() =
+   let i = 'A'
+   let o = 'N'
+   Assert.AreEqual(o, Rot.Encrypt.shift(i))
+
+[<Test>]
+let ''Shift 13 characters allong alphabet lowercase''() =
+   let i = 'a'
+   let o = 'n'
+   Assert.AreEqual(o, Rot.Encrypt.shift(i))
+
+\end{lstlisting}
+Shift is what takes care of the cyphering process. It accepts a character
+and will then check to see if the character is uppercase. If it is uppercase
+it will get the raw character value and then subtract it from the character value
+for A.
+
+In order to wrap around the alphabet our offsetNum will be a the remainder of the length of the alphabet, 26.
+The resulting character code is offsetNum + our starting character A. It then returns the appropriate character
+for the value
+
+In order to make our logic work without writing too much extra code I chose to pass the lowercase case letter
+back through shift recursively as uppercase and then back to lowercase. This is an area that could be improved on.
+
+There is also a check to see if the character is in fact a letter. If it is not a letter we cannot cypher it so we pass it back untouched.
+
+\begin{lstlisting}[language=F]
+let rotify(str:string) =
+    Alphabet.explode(str)
+    |> List.map (fun c -> shift(c))
+    |> Alphabet.implode
+
+[<Test>]
+let ''Rot13 this string''() =
+    let i = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    let o = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
+    Assert.AreEqual(o, Rot.Encrypt.rotify(i))
+
+[<Test>]
+let ''Handle non text inputs''() =
+    let i = "ABCD!FGHI-KLMNO4QRSTUV6XYZabcdefghijk-mnopqrs@uvwxyz"
+    let o = "NOPQ!STUV-XYZAB4DEFGHI6KLMnopqrstuvwx-zabcdef@hijklm"
+    Assert.AreEqual(o, Rot.Encrypt.rotify(i))
+\end{lstlisting}
+
+The rotify function takes all our independent function logic and creates a pipeline.
+We take in a string and explode it into a list of characters. We then pipe that list
+into a map function which applies the shift on each character. Finally we return back
+a string of the rotified text.
+
+\subsubsection{File.fs}
+
+File.fs handles our incoming file from the system. We want to do some checks to make
+sure the file actually exists before we start passing it to our rotify functions so we handle that here.
+
+\begin{lstlisting}[language=F]
+module FileIO
+    Open: string -> string list
+\end{lstlisting}
+
+\textbf{module FileIO}
+\begin{lstlisting}[language=F]
+  let Open(path:string) =
+      match File.Exists(path) with
+      | true ->
+          File.ReadAllLines(path)
+          |> Array.toList
+      | _ -> invalidArg "file" "The file specified does not exist"
+\end{lstlisting}
+When supplying the utility with a file argument we want to check that the
+file actually exists. We do a pattern match on File.Exists() and if it is true
+we can continue and read out all the lines to an Array.
+
+If not we return an error
+
+\subsubsection{Main.fs}
+\begin{lstlisting}[language=F]
+namespace Rot13
+module Main
+    entry: string[] -> int
+\end{lstlisting}
+
+\textbf{module Main}
+\begin{lstlisting}[language=F]
+[<EntryPoint>]
+let entry argv =
+  if (argv.Length = 0) then
+        printfn("Please provide the route to a file on the system to process")
+        1 //No file found so return an error exit code
+  else
+    FileIO.Open argv.[0]
+    |> List.map(fun line -> Rot.Encrypt.rotify(line) |> printfn("%s") )
+    |> ignore
+  0
+\end{lstlisting}
+
+This is where our utility entry point exists. Before we even attempt to read a file
+we need to check that the user has given us a path to look in first. If not
+we will let the user know via a printfn and exit with an error code of 1.
+
+If we do have a path we can attempt to open the file. Once opened FileIO gives us an
+Array of lines. We can map over that array and rotify each of them and subsequently print them to stdout.
+We don't expect an output from printfn so we have to send it to ignore.
+
+The utility then exits with a code 0.
+
+\subsection{Solution Analysis}

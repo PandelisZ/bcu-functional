@@ -28,7 +28,6 @@ module Encrypt =
      if(System.Char.IsLetter c) then
          let num = int(c) - int('A')
          let offsetNum = (num+13)%26
-         let result = offsetNum + int('A')
          if(isUpper c) then
              char(offsetNum + int('A'))
          else
