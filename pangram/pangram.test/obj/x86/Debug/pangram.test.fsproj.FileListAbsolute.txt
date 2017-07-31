@@ -1,0 +1,12 @@
+/Users/pz/w/functional/pangram/pangram.test/obj/x86/Debug/pangram.test.fsprojResolveAssemblyReference.cache
+/Users/pz/w/functional/pangram/pangram.test/obj/x86/Debug/pangram.test.fsproj.CoreCompileInputs.cache
+/Users/pz/w/functional/pangram/pangram.test/bin/Debug/pangram.test.exe
+/Users/pz/w/functional/pangram/pangram.test/bin/Debug/pangram.test.exe.mdb
+/Users/pz/w/functional/pangram/pangram.test/bin/Debug/FSharp.Core.dll
+/Users/pz/w/functional/pangram/pangram.test/bin/Debug/nunit.framework.dll
+/Users/pz/w/functional/pangram/pangram.test/bin/Debug/System.ValueTuple.dll
+/Users/pz/w/functional/pangram/pangram.test/bin/Debug/FSharp.Core.xml
+/Users/pz/w/functional/pangram/pangram.test/bin/Debug/nunit.framework.xml
+/Users/pz/w/functional/pangram/pangram.test/obj/x86/Debug/pangram.test.exe
+/Users/pz/w/functional/pangram/pangram.test/obj/x86/Debug/pangram.test.exe.mdb
+/Users/pz/w/functional/pangram/pangram.test/bin/Debug/pangram.exe

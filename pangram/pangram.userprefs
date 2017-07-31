@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{AFECF643-3267-4D4E-8DEE-8A65A4C6E5B1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.fs">
+    <Files>
+      <File FileName="Main.fs" Line="28" Column="8" />
+      <File FileName="pangram.test/Tests.fs" Line="57" Column="70" />
+      <File FileName="File.fs" Line="1" Column="1" />
+      <File FileName="Pangram.fs" Line="30" Column="38" />
+      <File FileName="packages.config" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="pangram" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.pangram PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

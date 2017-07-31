@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "pangram", "pangram.fsproj", "{AFECF643-3267-4D4E-8DEE-8A65A4C6E5B1}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "pangram.test", "pangram.test\pangram.test.fsproj", "{75BEEE04-E665-4EAB-91B5-9F395D2450EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFECF643-3267-4D4E-8DEE-8A65A4C6E5B1}.Debug|x86.ActiveCfg = Debug|x86
+		{AFECF643-3267-4D4E-8DEE-8A65A4C6E5B1}.Debug|x86.Build.0 = Debug|x86
+		{AFECF643-3267-4D4E-8DEE-8A65A4C6E5B1}.Release|x86.ActiveCfg = Release|x86
+		{AFECF643-3267-4D4E-8DEE-8A65A4C6E5B1}.Release|x86.Build.0 = Release|x86
+		{75BEEE04-E665-4EAB-91B5-9F395D2450EF}.Debug|x86.ActiveCfg = Debug|x86
+		{75BEEE04-E665-4EAB-91B5-9F395D2450EF}.Debug|x86.Build.0 = Debug|x86
+		{75BEEE04-E665-4EAB-91B5-9F395D2450EF}.Release|x86.ActiveCfg = Release|x86
+		{75BEEE04-E665-4EAB-91B5-9F395D2450EF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

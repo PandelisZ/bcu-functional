@@ -19,3 +19,19 @@ SHA
 furby
 terra
 what
+
+This Pangram contains four a’s, one b, two c’s, one d, thirty e’s, six f’s, 
+five g’s, seven h’s, eleven i’s, one j, one k, two l’s, two m’s, eighteen n’s, 
+fifteen o’s, two p’s, one q, five r’s, twenty-seven s’s, eighteen t’s, two u’s, 
+seven v’s, eight w’s, two x’s, three y’s, & one z.
+
+The quick brown fox jumps over a lazy dog.
+
+Pack my box with five dozen liquor jugs.
+
+Sphinx of black quartz, judge my vow.
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit, lectus pulvinar egestas commodo sagittis maecenas ad fusce, sed venenatis gravida dapibus sapien senectus. Tristique netus purus vel leo sapien nibh nostra tempus a mi quam, aptent curabitur etiam ultricies iaculis sollicitudin semper lobortis scelerisque. Natoque tristique tellus arcu netus id praesent sociosqu vulputate himenaeos bibendum, vestibulum maecenas et ullamcorper dapibus varius per vivamus.
+
+Sodales porta faucibus vel platea enim, habitasse blandit vitae curabitur penatibus massa, nibh non euismod nisi. Mauris bibendum lacinia sollicitudin velit quis faucibus sem, rhoncus leo posuere litora sodales dis suspendisse, ad convallis placerat magnis porttitor natoque. Auctor varius arcu taciti nostra tortor dictum interdum nullam placerat aptent sollicitudin, torquent aliquam nec condimentum lectus pretium ante donec primis.
+

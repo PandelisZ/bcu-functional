@@ -1,0 +1,9 @@
+/Users/pz/w/functional/pangram/bin/Debug/pangram.exe
+/Users/pz/w/functional/pangram/bin/Debug/pangram.exe.mdb
+/Users/pz/w/functional/pangram/bin/Debug/FSharp.Core.dll
+/Users/pz/w/functional/pangram/bin/Debug/System.ValueTuple.dll
+/Users/pz/w/functional/pangram/bin/Debug/FSharp.Core.xml
+/Users/pz/w/functional/pangram/obj/x86/Debug/pangram.fsprojResolveAssemblyReference.cache
+/Users/pz/w/functional/pangram/obj/x86/Debug/pangram.fsproj.CoreCompileInputs.cache
+/Users/pz/w/functional/pangram/obj/x86/Debug/pangram.exe
+/Users/pz/w/functional/pangram/obj/x86/Debug/pangram.exe.mdb
