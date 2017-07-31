@@ -16,5 +16,119 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{chechina2012design}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,hash=ba1f1b77168a1665f02964ba235985c0}{%
+           family={Chechina},
+           familyi={C\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod}}}%
+        {{uniquename=0,hash=c7febbc5a1f151e714c32fc9de384b86}{%
+           family={Trinder},
+           familyi={T\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+        {{uniquename=0,hash=21ca0f2b1ff56cc9f5df3b1b50ffd56a}{%
+           family={Ghaffari},
+           familyi={G\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=c202e4e91700843bfb6d89d388ac59a7}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Rickard},
+           giveni={R\bibinitperiod}}}%
+        {{uniquename=0,hash=561622a112572cbc57041389d9678a13}{%
+           family={Lundin},
+           familyi={L\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{uniquename=0,hash=12b8ab3e33bfc8b4bb73d2a9445e354a}{%
+           family={Virding},
+           familyi={V\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{333d7cdb4c14e053461fe8ddcfa2558e}
+      \strng{fullhash}{c8ee91ff94f0c74c797c121db0973dd4}
+      \strng{authornamehash}{333d7cdb4c14e053461fe8ddcfa2558e}
+      \strng{authorfullhash}{c8ee91ff94f0c74c797c121db0973dd4}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Symposium on Implementation and Application of Functional Languages, Oxford, UK}
+      \field{title}{The design of scalable distributed Erlang}
+      \field{year}{2012}
+      \field{pages}{85}
+      \range{pages}{1}
+    \endentry
+    \entry{fbconf}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=319377373d0239ca12cb38e40e4221d1}{%
+           family={Chris\bibnamedelima Piro},
+           familyi={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Eugene\bibnamedelima Letuchy},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Commercial Users of Functional Programming (CUFP)}%
+      }
+      \strng{namehash}{319377373d0239ca12cb38e40e4221d1}
+      \strng{fullhash}{319377373d0239ca12cb38e40e4221d1}
+      \strng{authornamehash}{319377373d0239ca12cb38e40e4221d1}
+      \strng{authorfullhash}{319377373d0239ca12cb38e40e4221d1}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{Functional Programming at Facebook}
+      \field{year}{2009}
+    \endentry
+    \entry{da2013comparing}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=49b5e9465ff226c93470c425012ed87f}{%
+           family={Silva\bibnamedelima Jr},
+           familyi={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Jucimar\bibnamedelima Maia},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={da},
+           prefixi={d\bibinitperiod}}}%
+        {{uniquename=0,hash=5851267b225d867bd5e7f1a7154f57e4}{%
+           family={Lins},
+           familyi={L\bibinitperiod},
+           given={Rafael\bibnamedelima Dueire},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{uniquename=0,hash=f81ce2bf86c6bf415d9c4b9b7b0f2b28}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Lanier\bibnamedelima Menezes},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={dos},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fa9bb960aad6734027748ec77244235}
+      \strng{fullhash}{9fa9bb960aad6734027748ec77244235}
+      \strng{authornamehash}{9fa9bb960aad6734027748ec77244235}
+      \strng{authorfullhash}{9fa9bb960aad6734027748ec77244235}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{COMPARING THE PERFORMANCE OF JAVA, ERLANG AND SCALA IN WEB 2.0 APPLICATIONS}
+      \field{title}{Comparing the Performance of Java, Erlang and Scala in Web 2.0 Applications}
+      \field{year}{2013}
+      \field{pages}{137}
+      \range{pages}{1}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 

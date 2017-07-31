@@ -1,1 +1,51 @@
-\parencite
+\section{Essay}
+How are Functional Programming techniques currently related to web development
+ and what connections does it have to the development of web services?
+
+\bigskip
+
+There are many requirements that web services and applications need to fulfill
+which often leads to sites becoming very hard to maintain in the long term. As
+features get added and new users begin to use the services developed the
+project can become enormously monolithic.
+
+Within the last decade web developers are trying to solve these challenges
+of constantly developing new features but avoiding a monolithic code base
+by splitting their services into \textit{micro-services}. These are smaller
+more manageable chunks of an overall web service or product which can
+exist on their own without any dependency on the rest of the codebase.
+
+This new shift in the way web developers are working and creating services
+means they can use any toolset or language they desire to build out a micro-service.
+This has allowed web developers to try out new methods and techniques integrating
+more functional and declarative techniques into the services they are producing.
+
+Functional languages and the techniques used also make it significantly easier
+to secure a web service and maintain high uptime. This is because each
+component of the code only ever needs to mutate requests and data. There are less
+complex data structures and objects to pass around. \parencite{da2013comparing}
+
+This high degree of performance and reliability is what helps modern
+web business such as Facebook maintain
+the enormous amount of data throughput they achieve in their datacenter. Most
+of their content is served from Haskell backed servers. \parencite{fbconf}
+
+There has also been a shift in the way web developers think about and develop
+new services. They are increasingly using more and more declarative syntax making small
+but highly reusable functions that can be picks out of and moved from project to project.
+This is a side effect of the scale of some engineering teams needing to maintain
+the readability and maintainability of their codebase. This process of defining
+reusable components makes designing and writing new features extremely easy and
+quick as most of the work is already done and validated.
+
+Furthermore there is a trend towards cloud computing which is shaking up the way
+services interact with each other and process data internally.
+This is leading to a shift towards highly distributed workloads which traditional
+OOP based languages and paradigms cant keep up with. We are begging to see functional
+languages excel in this space because of their highly parallelized nature.\parencite{chechina2012design}
+
+To conclude there is a culmination of factors that have been adding up over the years
+in conjunction with many new younger programmers introducing new techniques and
+tools to the web development ecosystem, that is leading to more functional and declarative
+systems. More developers are choosing to work with functional for reliability, security
+and scalability reasons. 
