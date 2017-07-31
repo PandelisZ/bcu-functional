@@ -1,0 +1,73 @@
+\begin{lstlisting}[language=F]
+let test = 10
+\end{lstlisting}
+
+\section{Tennis game scoring system}
+
+\subsection{Brief}
+
+Implement a program that simulates the scoring system for a single tennis game.
+
+\subsection{Analysis}
+
+\subsubsection{Expected Behaviour}
+A standard tennis game consists of one player or a team of two players a side competing to achieve a win condition. The win condition for a game of tennis as defined by the International Tennis Federation is as follows:
+
+\begin{quote}
+  A standard game is scored as follows with the server’s score being called
+  first:
+
+  No point - “Love”
+
+  First point - “15”
+
+  Second point - “30”
+
+  Third point - “40”
+
+  Fourth point - “Game”\\
+  except that if each player/team has won three points, the score is “Deuce”.
+  After “Deuce”, the score is “Advantage” for the player/team who wins the
+  next point. If that same player/team also wins the next point, that player/team
+  wins the “Game”; if the opposing player/team wins the next point, the score is
+  again “Deuce”. A player/team needs to win two consecutive points
+  immediately after “Deuce” to win the “Game”. \parencite{itf}
+\end{quote}
+
+We do not want our user to think about any of these complexities.
+All the user will need to do is select which player scored a point at the end of each play. It is then up to the program to compute the score and announce the winner when the win condition is met.
+
+\bigskip
+
+Bellow is our user's expected flow through the program. Where each state represents the following expected program behaviour:
+
+\begin{description}[align=left]
+\item [$s_0$] Enter player name \\ The \textit{user} enters a name for each participating player.
+\item [$s_1$] Tennis match loop \\ The \textit{user} enters which player scored a point during play.
+\item [$s_2$] Winner Announced \\ The \textit{program} produces a winner when the win condition is met. \\ The \textit{user} chooses to restart the game (using the players already entered) or start a new game
+\end{description}
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto]
+  \node[initial,state] (A)                                    {$s_0$};
+  \node[state]         (B) [right of=A]                       {$s_1$};
+  \node[state]         (C) [below of=B]                       {$s_2$};
+
+  \path[->] (A) edge [left] node {} (B)
+        (B) edge [loop above] node  {} (B)
+        (C) edge [left] node  {} (A);
+
+  \draw[-latex] (B) to[bend right=10] node[above,rotate=60] {} (C);
+  \draw[-latex] (C) to[bend right=10] node[below,rotate=60] {} (B);
+
+\end{tikzpicture}
+\end{figure}
+
+
+
+\subsection{Difficulties faced}
+
+\large{note}
+
+During the developement process organising the modules in the correct order rather than relying on object includes in a traditional oop fashion was difficult to get my head around. But after the intiial learning curve it was much easier to visualise the flow and better understand the way each program element interacts with eachoter

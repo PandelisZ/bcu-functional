@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{itf}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=03ff33138fb655985f5acc3349945735}{%
+           family={{ITF ltd}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{03ff33138fb655985f5acc3349945735}
+      \strng{fullhash}{03ff33138fb655985f5acc3349945735}
+      \strng{authornamehash}{03ff33138fb655985f5acc3349945735}
+      \strng{authorfullhash}{03ff33138fb655985f5acc3349945735}
+      \field{sortinit}{I}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{2016 Rules of Tennis (English)}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://www.itftennis.com/officiating/rulebooks/rules-of-tennis.aspx
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
